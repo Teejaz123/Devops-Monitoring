@@ -1,0 +1,8 @@
+- name: Deploy DevOps Dashboard
+  hosts: localhost
+  tasks:
+    - name: Start Docker Compose stack
+      community.docker.docker_compose:
+        project_src: ../docker
+        state: present
+
